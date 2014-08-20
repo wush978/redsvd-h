@@ -43,7 +43,10 @@ namespace RedSVD
 		using std::cos;
 		using std::sin;
 		
-		const Scalar PI(3.1415926535897932384626433832795028841971693993751);
+    #ifdef PI
+    #undef PI
+    #endif // PI
+		Scalar PI(3.1415926535897932384626433832795028841971693993751);
 		
 		Scalar v1 = (Scalar)(std::rand() + Scalar(1)) / ((Scalar)RAND_MAX+Scalar(2));
 		Scalar v2 = (Scalar)(std::rand() + Scalar(1)) / ((Scalar)RAND_MAX+Scalar(2));
