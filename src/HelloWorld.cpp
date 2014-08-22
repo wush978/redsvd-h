@@ -1,3 +1,4 @@
+#include <memory>
 #include <Rcpp.h>
 #include <RcppEigen.h>
 #include <redsvd.h>
